@@ -17,7 +17,7 @@
                     <div class="listing-card-body mt-3">
                         <p class="listing-card-text">
                             <b>Hosted By: </b><i>
-                                <%= listing.owner.username %>
+                                 <i><%= listing.owner ? listing.owner.username : 'Unknown Host' %></i>
                             </i>
                         </p>
                         <p class="listing-card-text">
